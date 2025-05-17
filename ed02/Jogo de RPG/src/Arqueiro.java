@@ -7,7 +7,7 @@ public class Arqueiro extends Personagem {
         super(nome, 120, 18);
     }
 
-    @Override
+
     public void atacar(Personagem inimigo) {
         int dano = ataqueBase;
         boolean critico = rand.nextInt(100) < 20;
@@ -20,7 +20,7 @@ public class Arqueiro extends Personagem {
         inimigo.defender(dano);
     }
 
-    @Override
+
     public void usarHabilidadeEspecial(Personagem[] inimigos) {
         System.out.println(nome + " usa Chuva de Flechas! 3 ataques consecutivos no primeiro inimigo.");
         if (inimigos.length > 0) {
