@@ -3,20 +3,20 @@ public class Guerreiro extends Personagem {
         super(nome, 150, 20);
     }
 
-
+@Override
     public void atacar(Personagem inimigo) {
         System.out.println(nome + " ataca com espada causando " + ataqueBase + " de dano.");
         inimigo.defender(ataqueBase);
     }
 
-
+@Override
     public void defender(int dano) {
         int reduzido = dano / 2;
         hp -= reduzido;
         System.out.println(nome + " defende com escudo. Dano reduzido para " + reduzido + ". HP atual: " + hp);
     }
 
-
+@Override
     public void usarHabilidadeEspecial(Personagem[] inimigos) {
         int dano = ataqueBase * 2;
         System.out.println(nome + " usa Golpe Duplo! Causa " + dano + " de dano em um inimigo.");
