@@ -1,4 +1,4 @@
-public class Conta {
+public abstract class Conta {
     protected String cliente;
     protected double saldo;
 
@@ -31,11 +31,11 @@ public class Conta {
         return saldo;
     }
 
-    public void aplicarJurosDiarios() {
+    public abstract void aplicarJurosDiarios(); {
         // Método genérico para sobrescrita
     }
 
-    public void imprimirExtrato() {
+    public abstract void imprimirExtrato(); {
         // Método genérico para sobrescrita
     }
 }
