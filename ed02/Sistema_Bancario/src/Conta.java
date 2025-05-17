@@ -31,11 +31,11 @@ public abstract class Conta {
         return saldo;
     }
 
-    public abstract void aplicarJurosDiarios(); {
+    public abstract void aplicarJurosDiarios();
         // Método genérico para sobrescrita
-    }
 
-    public abstract void imprimirExtrato(); {
+
+    public abstract void imprimirExtrato();
         // Método genérico para sobrescrita
-    }
+
 }

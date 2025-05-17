@@ -3,7 +3,8 @@ public class ContaPoupanca extends Conta {
         super(cliente, saldo);
     }
 
-@Override
+
+    @Override
     public void aplicarJurosDiarios() {
         saldo *= 1.0008;
         System.out.printf("Juros 0.08%% aplicados à conta de %s. Novo saldo: R$%.2f%n", cliente, saldo);
