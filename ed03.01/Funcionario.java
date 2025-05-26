@@ -7,9 +7,9 @@ public abstract class Funcionario {
         this.salarioBase = salarioBase;
     }
 
-    public  void exibirDados(){
-        System.out.println("Nome: "+ nome);
-        System.out.println("Salário Base: " + salarioBase);
+    public  void exibirDados(){    //método
+        System.out.println("Nome: "+ nome);   //atributo
+        System.out.println("Salário Base: " + salarioBase);   //atributo
     }
     public abstract double calcularSalario();
 }
