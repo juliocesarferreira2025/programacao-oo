@@ -12,9 +12,9 @@ public class PessoaFisica extends ContatoBase {
         return CPF;
     }
 
-    public void setCpf(String cpf) {
+    public void setCpf(String CPF) {
         if (CPF != null && CPF.matches("\\d{11}")) {
-            this.CPF = cpf;
+            this.CPF = CPF;
         } else {
             throw new IllegalArgumentException("CPF inválido. Deve conter 11 dígitos numéricos.");
         }
