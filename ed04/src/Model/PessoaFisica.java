@@ -1,20 +1,20 @@
 package Model;
 
 public class PessoaFisica extends ContatoBase {
-    private String cpf;
+    private String CPF;
 
-    public PessoaFisica(String nome, String telefone, String email, String cpf) {
+    public PessoaFisica(String nome, String telefone, String email, String CPF) {
         super(nome, telefone, email);
-        setCpf(cpf);
+        setCpf(CPF);
     }
 
-    public String getCpf() {
-        return cpf;
+    public String getCPF() {
+        return CPF;
     }
 
     public void setCpf(String cpf) {
-        if (cpf != null && cpf.matches("\\d{11}")) {
-            this.cpf = cpf;
+        if (CPF != null && CPF.matches("\\d{11}")) {
+            this.CPF = cpf;
         } else {
             throw new IllegalArgumentException("CPF inválido. Deve conter 11 dígitos numéricos.");
         }

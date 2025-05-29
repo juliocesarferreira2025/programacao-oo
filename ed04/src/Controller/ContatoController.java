@@ -13,7 +13,7 @@ public class ContatoController {
     public void adicionar(Contato contato) {
         if (contato instanceof PessoaFisica pf) {
             for (Contato c : contatos) {
-                if (c instanceof PessoaFisica && ((PessoaFisica) c).getCpf().equals(pf.getCpf())) {
+                if (c instanceof PessoaFisica && c.getCPF().equals(pf.getCPF())) {
                     System.out.println("Contato com este CPF já existe.");
                     return;
                 }
@@ -31,7 +31,7 @@ public class ContatoController {
     }
 
     public void remover(String identificador) {
-        contatos.removeIf(c -> (c instanceof PessoaFisica && ((PessoaFisica) c).getCpf().equals(identificador)) ||
+        contatos.removeIf(c -> (c instanceof PessoaFisica && ((PessoaFisica) c).getCPF().equals(identificador)) ||
                 (c instanceof PessoaJuridica && ((PessoaJuridica) c).getCnpj().equals(identificador)));
     }
 

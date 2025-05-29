@@ -35,11 +35,11 @@ public class ProgramaAgenda {
                     try {
                         if ("1".equals(tipo)) {
                             System.out.print("CPF (11 dígitos): ");
-                            String cpf = scanner.nextLine();
+                            String cpf = scanner.nextLine().replaceAll("\\D", ""); // remove não dígitos
                             controller.adicionar(new PessoaFisica(nome, telefone, email, cpf));
                         } else if ("2".equals(tipo)) {
                             System.out.print("CNPJ (14 dígitos): ");
-                            String cnpj = scanner.nextLine();
+                            String cnpj = scanner.nextLine().replaceAll("\\D", "");
                             controller.adicionar(new PessoaJuridica(nome, telefone, email, cnpj));
                         } else {
                             System.out.println("Tipo inválido.");
@@ -56,7 +56,7 @@ public class ProgramaAgenda {
 
                 case "3" -> {
                     System.out.print("Informe CPF ou CNPJ para remover: ");
-                    String id = scanner.nextLine();
+                    String id = scanner.nextLine().replaceAll("\\D", "");
                     controller.remover(id);
                     System.out.println("Remoção concluída.");
                 }

@@ -13,8 +13,7 @@ public abstract class ContatoBase implements Contato {
         this.telefone = telefone;
         this.email = email;
         this.CPF = CPF;
-        this.CNPJ = CNPJ;
-    }
+        this.CNPJ = CNPJ; }
 
     public String getNome() {
         return nome;
@@ -51,6 +50,7 @@ public abstract class ContatoBase implements Contato {
     public void setCPF(String CPF) {
         this.CPF = CPF;
     }
+
     public String getCNPJ() {
         return CNPJ;
     }
