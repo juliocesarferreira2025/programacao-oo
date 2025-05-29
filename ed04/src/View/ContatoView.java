@@ -14,9 +14,9 @@ public class ContatoView {
     }
 
     public void mostrarContatos(List<Contato> contatos) {
-        System.out.printf("%-20s %-15s %-25s\n", "Nome", "Telefone", "Email");
+        System.out.printf("%-20s %-15s %-25s\n", "Nome", "Telefone", "Email", "CPF", "CNPJ");
         for (Contato contato : contatos) {
-            System.out.printf("%-20s %-15s %-25s\n", contato.getNome(), contato.getTelefone(), contato.getEmail());
+            System.out.printf("%-20s %-15s %-25s\n", contato.getNome(), contato.getTelefone(), contato.getEmail(), contato.getCPF(), contato.getCNPJ());
         }
     }
 }
