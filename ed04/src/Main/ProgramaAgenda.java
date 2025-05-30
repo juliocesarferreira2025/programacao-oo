@@ -50,7 +50,7 @@ public class ProgramaAgenda {
                 }
 
                 case "2" -> {
-                    System.out.println("\n--- Lista de Contatos ---");
+                    System.out.println("\n >>>>>> Lista de Contato <<<<<<<");
                     view.mostrarContatos(controller.listar());
                 }
 
