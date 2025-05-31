@@ -8,7 +8,7 @@ import java.util.List;
 
 public class ContatoView {
     public void exibirMenu() {
-        System.out.println("Agenda de Contatos:");
+        System.out.println("\n\n>> AGENDA DE CONTATO: <<\n\n");
         System.out.println("1. Adicionar Contato");
         System.out.println("2. Listar Contatos");
         System.out.println("3. Remover Contato");

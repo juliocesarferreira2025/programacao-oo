@@ -1,4 +1,4 @@
-package Main;
+package ProgramaAgenda;
 
 import Controller.ContatoController;
 import Model.PessoaFisica;
@@ -15,7 +15,7 @@ public class ProgramaAgenda {
 
         while (true) {
             view.exibirMenu();
-            System.out.print("Escolha uma opção: ");
+            System.out.print("\n\n ESCOLHA UMA DAS OPÇÕES ACIMA: ");
             String opcao = scanner.nextLine();
 
             switch (opcao) {
@@ -50,19 +50,19 @@ public class ProgramaAgenda {
                 }
 
                 case "2" -> {
-                    System.out.println("\n >>>>>> Lista de Contato <<<<<<<");
+                    System.out.println("\n\n >>>>>> Lista de Contato <<<<<<<");
                     view.mostrarContatos(controller.listar());
                 }
 
                 case "3" -> {
-                    System.out.print("Informe CPF ou CNPJ para remover: ");
+                    System.out.print("\nInforme: \n1-> CPF\nou\n2-> CNPJ\nPara remover: ");
                     String id = scanner.nextLine().replaceAll("\\D", "");
                     controller.remover(id);
-                    System.out.println("Remoção concluída.");
+                    System.out.println("\n\n Remoção concluída.");
                 }
 
                 case "0" -> {
-                    System.out.println("Encerrando o programa...");
+                    System.out.println("\n\nENCERRANDO O PROGRAMA...");
                     scanner.close();
                     return;
                 }
