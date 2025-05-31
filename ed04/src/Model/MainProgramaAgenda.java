@@ -1,13 +1,11 @@
-package ProgramaAgenda;
+package Model;
 
 import Controller.ContatoController;
-import Model.PessoaFisica;
-import Model.PessoaJuridica;
 import View.ContatoView;
 
 import java.util.Scanner;
 
-public class ProgramaAgenda {
+public class MainProgramaAgenda {
     public static void main(String[] args) {
         ContatoController controller = new ContatoController();
         ContatoView view = new ContatoView();
@@ -67,7 +65,7 @@ public class ProgramaAgenda {
                     return;
                 }
 
-                default -> System.out.println("Opção inválida. Tente novamente.");
+                default -> System.out.println("****Opção inválida. Tente novamente***.");
             }
 
             System.out.println(); // espaço entre operações

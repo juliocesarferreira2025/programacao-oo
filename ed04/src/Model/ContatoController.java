@@ -27,7 +27,7 @@ public class ContatoController {
             }
         }
         contatos.add(contato);
-        System.out.println("Contato adicionado com sucesso.");
+        System.out.println("\n >> Contato adicionado com sucesso <<.");
     }
 
     public void remover(String identificador) {
